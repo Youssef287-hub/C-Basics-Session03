@@ -48,22 +48,34 @@
 
             #region Question 4
             //4- Given int pages = 464;, use the ternary operator to store "Long Book" or "Short Book" into a variable sizeLabel(same rule as question 8: long if pages > 300).
-            int pages = 464;
-
-            string sizeLabel = pages > 300 ? "Long Book" : "Short Book";
-
+            ///int pages = 464;
+            ///
+            ///string sizeLabel = pages > 300 ? "Long Book" : "Short Book";
             #endregion
 
             #region Question 5
             //5-Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop to print each book with its position number, like 1.Clean Code.
+            ///string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            ///
+            ///for (int i = 0; i < books.Length; i++)
+            ///{
+            ///    Console.WriteLine($"{i + 1}. {books[i]}");
+            ///}
+
+
+            #endregion
+
+            #region Question 6
+            //6-Using the same books array, use a while loop to print every book title.
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
-            for (int i = 0; i < books.Length; i++)
+            int i = 0;
+
+            while (i < books.Length)
             {
-                Console.WriteLine($"{i + 1}. {books[i]}");
+                Console.WriteLine(books[i]);
+                i++;
             }
-
-
             #endregion
         }
     }
