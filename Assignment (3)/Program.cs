@@ -1,4 +1,6 @@
-﻿namespace Assignment__3_
+﻿using System.Runtime.Intrinsics.X86;
+
+namespace Assignment__3_
 {
     internal class Program
     {
@@ -120,14 +122,28 @@
 
             #region Question 10
             //10- Using the same books array, print every title except "The Pragmatic Programmer" (skip it with continue, don't stop the loop).
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            ///string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            ///
+            ///foreach (string book in books)
+            ///{
+            ///    if (book == "The Pragmatic Programmer")
+            ///        continue;
+            ///
+            ///    Console.WriteLine(book);
+            ///}
 
-            foreach (string book in books)
+            #endregion
+
+            #region Question 11
+            //11- Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty, use return to exit the method early instead of printing anything.
+            static void PrintFirstBook()
             {
-                if (book == "The Pragmatic Programmer")
-                    continue;
+                string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
-                Console.WriteLine(book);
+                if (books.Length == 0)
+                    return;
+
+                Console.WriteLine(books[0]);
             }
 
             #endregion
