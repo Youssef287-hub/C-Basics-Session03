@@ -106,12 +106,26 @@
 
             #region Question 9
             //9- Using the same books array, loop through it and print each title, but stop completely (break) once you reach "Refactoring".
+            ///string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            ///
+            ///foreach (string book in books)
+            ///{
+            ///    if (book == "Refactoring")
+            ///        break;
+            ///
+            ///    Console.WriteLine(book);
+            ///}
+
+            #endregion
+
+            #region Question 10
+            //10- Using the same books array, print every title except "The Pragmatic Programmer" (skip it with continue, don't stop the loop).
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
             foreach (string book in books)
             {
-                if (book == "Refactoring")
-                    break;
+                if (book == "The Pragmatic Programmer")
+                    continue;
 
                 Console.WriteLine(book);
             }
