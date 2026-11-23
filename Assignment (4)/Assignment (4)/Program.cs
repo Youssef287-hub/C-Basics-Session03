@@ -29,10 +29,20 @@ namespace Assignment__4_
             #region Question 3
             // Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same object. Print the final result.
 
-            StringBuilder sb = new StringBuilder();
+            ///StringBuilder sb = new StringBuilder();
+            ///
+            ///sb.Append("Book List");
+            ///sb.Append(" - Updated");
+            ///
+            ///Console.WriteLine(sb);
+            #endregion
 
+            #region Question 4
+            // Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library". Print the result.
+
+            StringBuilder sb = new StringBuilder();
             sb.Append("Book List");
-            sb.Append(" - Updated");
+            sb.Replace("Book List", "Library");
 
             Console.WriteLine(sb);
             #endregion
